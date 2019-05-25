@@ -37,7 +37,7 @@ var myCan = {
                     clearInterval(timer);
                 }
             }
-        }, 10)
+        }, 5)
 
         //字
         context.save();
