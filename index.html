@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h2><img src="./img/logo.png" alt=""></h2>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/6.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="nav">
+            <dl><dt><img src="./img/icon_r1_c1.png" alt=""></dt>
+                <dd>华人金融</dd>
+            </dl>
+            <dl><dt><img src="./img/icon_r1_c6.png" alt=""></dt>
+                <dd>0元购</dd>
+            </dl>
+            <dl><dt><img src="./img/icon_r1_c9.png" alt=""></dt>
+                <dd>安全保障</dd>
+            </dl>
+            <dl><dt><img src="./img/icon_r2_c3.png" alt=""></dt>
+                <dd>推荐好友</dd>
+            </dl>
+        </div>
+        <div class="main">
+            <div class="list">
+                <div class="left">
+                    <table>
+                        <tr>
+                            <th colspan="3"><span>半</span>华金1号 半年投<b>限</b></th>
+                        </tr>
+                        <tr>
+                            <td>年化收益</td>
+                            <td>期限</td>
+                            <td>起投金额</td>
+                        </tr>
+                        <tr>
+                            <td><em>10.00%</em>+<em>5.50%</em></td>
+                            <td>6个月</td>
+                            <td>1000元</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right">
+                    <canvas id="mycanvas1"></canvas>
+                </div>
+            </div>
+            <div class="list">
+                <div class="left">
+                    <table>
+                        <tr>
+                            <th colspan="3"><span>半</span>华金1号 半年投<b>限</b></th>
+                        </tr>
+                        <tr>
+                            <td>年化收益</td>
+                            <td>期限</td>
+                            <td>起投金额</td>
+                        </tr>
+                        <tr>
+                            <td><em>9.00%</em></td>
+                            <td>15天</td>
+                            <td>1000元</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right">
+                    <canvas id="mycanvas2"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="javascript:" class="active"><i class="iconfont icon-iconhuidaoshouye"></i><span>首页</span></a>
+            <a href="javascript:"><i class="iconfont icon-zhifu-01"></i><span>理财</span></a>
+            <a href="javascript:"><i class="iconfont icon-default-avatar"></i><span>账户</span></a>
+            <a href="javascript:"><i class="iconfont icon-gengduo"></i><span>更多</span></a>
+        </div>
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/circle.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true
+        })
+        myCan.drawCircle($('mycanvas1'), '#ccc', '#F6090B', 87.63, 'red', '投资中', '#000');
+        myCan.drawCircle($('mycanvas2'), '#ccc', '#F6090B', 42.49, 'red', '投资中', '#000');
+
+        function $(id) {
+            return document.getElementById(id);
+        }
+    </script>
+</body>
+
+</html>
